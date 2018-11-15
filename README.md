@@ -45,10 +45,6 @@ Las reglas del negocio son:
 - Uso de `map`, `filter`, `reduce`, `forEach`.
 - Uso de componentes funcionales en tu aplicación
 
-# Recursos
-
-[nodejs]: https://nodejs.org/en/download/
-
 
 # Reglas de entrega
 
