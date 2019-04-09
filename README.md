@@ -1,4 +1,4 @@
-# Frontend Technical Test :mag_right:
+# Developer Frontend Technical Test :mag_right:
 
 - [Requerimientos mínimos](#requerimientos-mínimos)
 - [Correr la aplicación](#correr-aplicación)
@@ -58,7 +58,7 @@ tu aplicación.
 
 4. Por favor, no subas tu desarrollo a Github para hacer que el proceso de selección
 sea más justo para todos. Envíanos tu proyecto en formato .zip al correo
-`lliempi@ecomsur.com`
+`lliempi@ecomsur.com`, `cmardones@ecomsur.com`
 
 
 ¡Mucho éxito! :muscle:
