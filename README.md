@@ -7,7 +7,7 @@
 
 ## Requerimientos mínimos
 
-- [Node 6.9.1][nodejs]
+- [Node 12.16.1][nodejs]
 
 ## Correr aplicación
 
@@ -25,15 +25,17 @@ $ npm run webpack
 
 ## Descripción del test
 
-Se requiere implementar un carrito de compras simple, éste debe contar con dos secciones importantes:
+Se requiere implementar un carrito de compras simple, éste debe contar con tres secciones importantes:
 
 - Una lista de ítems mostrando el catálogo de productos.
 - Un carrito de compras que tenga todos los ítems que serán comprados por el usuario.
+- Espacio donde se muestre la sincronización de los ítems añadidos al carrito. 
 
 Las reglas del negocio son:
 
 - Cada ítem del catálogo debe tener un action button con texto `Add item to cart`
 - Cada ítem en el carro debe tener un action button con texto `Remove item from cart`
+- La sincronización de los ítems se puede mostrar con textos o números 
 
 # DEMO
 
