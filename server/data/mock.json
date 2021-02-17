@@ -1,0 +1,43 @@
+{
+  "catalog": [{
+      "id": 1,
+      "imageURL": "https://image.freepik.com/foto-gratis/sombrero-lona-deporte-manera-blanco_1203-5371.jpg",
+      "name": "Gorra ",
+      "type": "",
+      "price": 150,
+      "currency": "$"
+    },
+    {
+      "id": 2,
+      "imageURL": "https://image.freepik.com/foto-gratis/textura-tejanos-cualquier-fondo_1205-790.jpg?1",
+      "name": "Pantalones Mezclilla",
+      "type": "",
+      "price": 350,
+      "currency": "$"
+    },
+    {
+      "id": 3,
+      "imageURL": "https://image.freepik.com/foto-gratis/tienda-ropa-tienda-ropa-perchas-tienda-boutique-moderna_1150-8886.jpg",
+      "name": "Camisas Colores",
+      "type": "",
+      "price": 200,
+      "currency": "$"
+    },
+    {
+      "id": 4,
+      "imageURL": "https://image.freepik.com/foto-gratis/muchas-camisetas-algodon-basicas-blancas-dobladas-presentadas-interior-rustico_346278-1675.jpg",
+      "name": "Camiseta Blanca",
+      "type": "",
+      "price": 500,
+      "currency": "$"
+    },
+    {
+      "id": 5,
+      "imageURL": "https://image.freepik.com/foto-gratis/par-entrenadores_144627-3799.jpg",
+      "name": "Tenis Azules",
+      "type": "",
+      "price": 900,
+      "currency": "$"
+    }
+  ]
+}

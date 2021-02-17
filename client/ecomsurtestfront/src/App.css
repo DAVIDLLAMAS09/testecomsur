@@ -1,0 +1,138 @@
+.product-card-single{
+  
+  background-color: #FFF;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.product-card-single img{
+  transition: all linear 0.25s;
+  max-width: 110%;
+}
+
+.product-card-single .product-single-name{
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+  font-size: 30px;
+  color: #FFF;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  transition: all linear 0.25s;
+  
+}
+
+.product-card-single .product-single-price{
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: bold;
+  transition: all linear 0.25s;
+  background: #29b934;
+  padding: 8px;
+  border-radius: 0px 10px 5px 10px;
+}
+
+.product-card-single:hover img{
+  filter: grayscale(100%);
+}
+
+.product-card-single:hover .product-single-name{
+  bottom: 50px;
+}
+
+.btn-cart{
+  position:absolute!important;
+  top: 0;
+  left: 0;
+  background: #000!important;
+  color: #FFF!important;
+  border: none!important;
+}
+
+.product-card-single .add-cart{
+  
+  border-radius: 0;
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 150ms ease-in-out;
+  font-weight: bold;
+}
+
+.add-cart:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #ffffff;
+  z-index: -1;
+  transition: width 150ms ease-in-out;
+}
+.add-cart:hover {
+  color: rgb(0, 0, 0)!important;
+  font-weight: bold;
+}
+.add-cart:hover:after {
+  width: 110%;
+}
+
+.header-cart{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(https://image.freepik.com/foto-gratis/tienda-ropa-efecto-borroso_23-2148164688.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.header-cart h2{
+  position: absolute;
+  left: calc(0%);
+  top: calc(50% - 25px);
+  text-align: center;
+  color: #FFF;
+  font-size: 68px;
+  line-height: 72px;
+  width: 100%;
+  
+}
+
+.btn-cart-view{
+  position:absolute!important;
+  font-weight: bold;
+  left: calc(45%);
+  top: calc(80% - 25px);
+  background: rgb(214, 18, 18)!important;
+  color: #FFF!important;
+  border: none!important;
+  padding: 10px 40px!important;
+}
+
+.background-header{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.418);
+}
+
+.name-product-modal{
+  display: inline-block;
+    margin-left: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
