@@ -3,7 +3,7 @@ import { Container, Button, Modal } from 'react-bootstrap';
 import {connect} from "react-redux"
 
 
-
+/* componente donde se visualiza si hay productos en el carrito */
 const ViewCartProducts=({state, dispatch})=> {
     const [modalShow, setModalShow] = useState(false);
     const { cart } = state;
@@ -16,6 +16,7 @@ const ViewCartProducts=({state, dispatch})=> {
         <div className="header-cart">
             <div className="background-header"></div>
             <Container>
+                {/* si esta vacio el estado de cart mandamos un aviso en caso contrario mostramos un total y un boton para abrir el modal del carrito */}
                 {
                     cart.length > 0 ? (
                         <>
@@ -36,7 +37,7 @@ const ViewCartProducts=({state, dispatch})=> {
 }
 
 
-
+/* componente del modal de productos que hay en el carrito y donde se elimina un producto y-o varios */
 const ComponentModalProducts=({cart,total,dispatch,...props})=> {
     const [onCart,setOnCart]=useState(cart)
     let onCart2 = [...cart]
@@ -79,7 +80,7 @@ const ComponentModalProducts=({cart,total,dispatch,...props})=> {
                             </div>
                             <div className="media-body text-right" >
                                 <h3>{elem.currency}{elem.price}</h3>
-                               <Button style={{position:'absolute',right:0,bottom:0}} onClick={()=>removetoCart(elem)} variant="danger">Remove item to cart</Button>
+                               <Button style={{position:'absolute',right:0,bottom:0}} onClick={()=>removetoCart(elem)} variant="danger">Remove item from cart</Button>
                             </div>
                             </div>
                         </div>

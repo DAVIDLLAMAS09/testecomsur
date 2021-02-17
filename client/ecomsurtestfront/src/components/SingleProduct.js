@@ -1,19 +1,21 @@
 import '../App.css';
 import React,{useState} from 'react';
-import { Col, Card, Button }from "react-bootstrap"
+import { Col, Button }from "react-bootstrap"
 
+/* componente hijo de productComponent */
 const SingleProduct=({ currency, id, imageURL, name, price, dispatch,cart })=> {
     const [thisProduct,setThisProduct]=useState({currency, id, imageURL, name, price})
     const [list,setList]=useState(cart);
     const list2 = cart
     
+    /* funcion que agrega un producto al carrito y actualizamos el store de redux a traves de un dispatch */
     const addToCart =()=>{
         let copyList = list2
         console.log(copyList)
         let existProduct = copyList.findIndex(elem=>thisProduct.id === elem.id)
         console.log("existe: ",existProduct) 
         
-        
+        /* si el producto existe se modifica el objeto cambiando su precio y actualizamos el estado */
         if(existProduct !== -1){
             console.log("dentro de la condicion: ",list2)
             let indexProduct = list2.findIndex(elem=> elem.id === thisProduct.id)
