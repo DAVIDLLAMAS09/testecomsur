@@ -136,3 +136,13 @@
     font-weight: bold;
     letter-spacing: 2px;
 }
+
+.close {
+  float: right;
+  font-size: 32px!important;
+  font-weight: 700!important;
+  line-height: 1;
+  color: rgb(219, 28, 28)!important;
+  text-shadow: 0 1px 0 #ea1a1a!important;
+  opacity: 0.8!important;
+}

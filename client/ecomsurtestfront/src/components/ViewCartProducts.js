@@ -61,15 +61,15 @@ const ComponentModalProducts=({cart,total,dispatch,...props})=> {
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <Modal.Header closeButton>
+        <Modal.Header className="text-center" closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-          Cart
+          
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
             {
                 onCart.map(elem=> (
-                    <div class="card" style={{marginTop:20}}>
+                    <div class="card" style={{marginTop:20,boxShadow: 'rgb(46 208 72 / 28%) 0px 0px 25px',border:'none'}}>
                         <div className="card-content">
                         <div className="card-body">
                             <div className="media d-flex">
@@ -87,7 +87,7 @@ const ComponentModalProducts=({cart,total,dispatch,...props})=> {
                     </div>
                 ))
             }
-            <p>TOTAL: MXN ${total}</p>
+            <p style={{textAlign:'right',fontSize:18,fontWeight:'bold',marginTop:10,paddingRight:10}}>TOTAL: MXN ${total}</p>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="info" onClick={props.onHide}>Close</Button>
